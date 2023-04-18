@@ -1,0 +1,8 @@
+0.0.0.0 i.ytimg.com
+0.0.0.0 yt3.ggpht.com
+0.0.0.0 lbigolive.tv
+0.0.0.0 like.video
+0.0.0.0 likee.video
+0.0.0.0 bajao.pk
+0.0.0.0 facebook.com
+0.0.0.0 fbcdn.net
