@@ -1,9 +1,11 @@
 # imported from nextdns router profile
 0.0.0.0 kwai.net
 0.0.0.0 i.ytimg.com
+0.0.0.0 yt3.ggpht.com
 0.0.0.0 baidu.com
 0.0.0.0 kwai-pro.com
 0.0.0.0 facebook.com
+0.0.0.0 fbcdn.net
 0.0.0.0 like.video
 0.0.0.0 likeevideo.com
 0.0.0.0 snackvideo.in
