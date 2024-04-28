@@ -16,3 +16,36 @@ ff02::3 ip6-allhosts
 # games
 0.0.0.0 igroutka.ru
 0.0.0.0 www.y8.com
+
+# all invidious instances
+0.0.0.0 inv.nadeko.net
+0.0.0.0 inv.oikei.net
+0.0.0.0 inv.tux.pizza
+0.0.0.0 inv.us.projectsegfau.lt
+0.0.0.0 invidious.drgns.space
+0.0.0.0 invidious.einfachzocken.eu
+0.0.0.0 invidious.fdn.fr
+0.0.0.0 invidious.flokinet.to
+0.0.0.0 invidious.jing.rocks
+0.0.0.0 invidious.lunar.icu
+0.0.0.0 invidious.nerdvpn.de
+0.0.0.0 invidious.perennialte.ch
+0.0.0.0 invidious.privacydev.net
+0.0.0.0 invidious.privacyredirect.com
+0.0.0.0 invidious.private.coffee
+0.0.0.0 invidious.projectsegfau.lt
+0.0.0.0 invidious.protokolla.fi
+0.0.0.0 iv.datura.network
+0.0.0.0 iv.ggtyler.dev
+0.0.0.0 iv.melmac.space
+0.0.0.0 iv.nboeck.de
+0.0.0.0 squidfunk.github.iomkdocs-material
+0.0.0.0 stats.uptimerobot.comn7A08HGVl6786947233
+0.0.0.0 uptime.invidious.io
+0.0.0.0 uptime.invidious.io784257752
+0.0.0.0 vid.lilay.dev
+0.0.0.0 vid.puffyan.us
+0.0.0.0 yewtu.be
+0.0.0.0 yt.artemislena.eu
+0.0.0.0 yt.cdaut.de
+0.0.0.0 yt.drgnz.club
