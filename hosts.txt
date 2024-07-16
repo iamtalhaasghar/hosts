@@ -82,4 +82,3 @@ ff02::3 ip6-allhosts
 0.0.0.0 libreddit.bus-hit.me
 0.0.0.0 r.darklab.sh
 0.0.0.0 libreddit.tux.pizza
-https://libreddit.tux.pizza
