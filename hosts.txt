@@ -67,3 +67,19 @@ ff02::3 ip6-allhosts
 0.0.0.0 bigolive.tv
 0.0.0.0 instagram.com
 0.0.0.0 twitter.com
+
+# reddit instances
+0.0.0.0 libreddit.kavin.rocks
+0.0.0.0 reddit.simo.sh
+0.0.0.0 lr.vern.cc
+0.0.0.0 libreddit.nl
+0.0.0.0 reddit.rtrace.io
+0.0.0.0 libreddit.privacydev.net
+0.0.0.0 l.opnxng.com
+0.0.0.0 libreddit.projectsegfau.lt
+0.0.0.0 libreddit.oxymagnesium.com
+0.0.0.0 reddit.utsav2.dev
+0.0.0.0 libreddit.bus-hit.me
+0.0.0.0 r.darklab.sh
+0.0.0.0 libreddit.tux.pizza
+https://libreddit.tux.pizza
