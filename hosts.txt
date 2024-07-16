@@ -49,3 +49,21 @@ ff02::3 ip6-allhosts
 0.0.0.0 yt.artemislena.eu
 0.0.0.0 yt.cdaut.de
 0.0.0.0 yt.drgnz.club
+
+# imported from nextdns router profile
+0.0.0.0 kwai.net
+0.0.0.0 i.ytimg.com
+0.0.0.0 yt3.ggpht.com
+0.0.0.0 baidu.com
+0.0.0.0 kwai-pro.com
+0.0.0.0 facebook.com
+0.0.0.0 fbcdn.net
+0.0.0.0 like.video
+0.0.0.0 likeevideo.com
+0.0.0.0 snackvideo.in
+0.0.0.0 snackvideo.com
+0.0.0.0 bajao.pk
+0.0.0.0 likee.video
+0.0.0.0 bigolive.tv
+0.0.0.0 instagram.com
+0.0.0.0 twitter.com
