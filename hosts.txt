@@ -50,6 +50,30 @@ ff02::3 ip6-allhosts
 0.0.0.0 yt.cdaut.de
 0.0.0.0 yt.drgnz.club
 
+# invidious instance list https://raw.githubusercontent.com/iv-org/documentation/master/docs/instances.md
+0.0.0.0 yewtu.be
+0.0.0.0 yt.artemislena.eu
+0.0.0.0 invidious.flokinet.to
+0.0.0.0 invidious.privacydev.net
+0.0.0.0 iv.melmac.space
+0.0.0.0 inv.nadeko.net
+0.0.0.0 inv.tux.pizza
+0.0.0.0 invidious.protokolla.fi
+0.0.0.0 invidious.private.coffee
+0.0.0.0 yt.drgnz.club
+0.0.0.0 iv.datura.network
+0.0.0.0 invidious.fdn.fr
+0.0.0.0 invidious.perennialte.ch
+0.0.0.0 invidious.drgns.space
+0.0.0.0 invidious.nerdvpn.de
+0.0.0.0 invidious.jing.rocks
+0.0.0.0 invidious.privacyredirect.com
+0.0.0.0 invidious.reallyaweso.me
+0.0.0.0 invidious.materialio.us
+0.0.0.0 inv.in.projectsegfau.lt
+0.0.0.0 invidious.incogniweb.net
+0.0.0.0 invidious.darkness.services
+
 # imported from nextdns router profile
 0.0.0.0 kwai.net
 0.0.0.0 i.ytimg.com
@@ -68,7 +92,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 instagram.com
 0.0.0.0 twitter.com
 
-# reddit instances
+# Libreddit instances https://raw.githubusercontent.com/libreddit/libreddit-instances/master/instances.md
+0.0.0.0 safereddit.com
 0.0.0.0 libreddit.kavin.rocks
 0.0.0.0 reddit.simo.sh
 0.0.0.0 lr.vern.cc
@@ -81,4 +106,36 @@ ff02::3 ip6-allhosts
 0.0.0.0 reddit.utsav2.dev
 0.0.0.0 libreddit.bus-hit.me
 0.0.0.0 r.darklab.sh
+0.0.0.0 snoo.habedieeh.re
 0.0.0.0 libreddit.tux.pizza
+
+# Redlib instances https://raw.githubusercontent.com/redlib-org/redlib-instances/main/instances.md
+0.0.0.0 l.opnxng.com
+0.0.0.0 libreddit.projectsegfau.lt
+0.0.0.0 libreddit.bus-hit.me
+0.0.0.0 redlib.catsarch.com
+0.0.0.0 redlib.freedit.eu
+0.0.0.0 redlib.tux.pizza
+0.0.0.0 redlib.vimmer.dev
+0.0.0.0 libreddit.privacydev.net
+0.0.0.0 lr.n8pjl.ca
+0.0.0.0 rl.bloat.cat
+0.0.0.0 redlib.nohost.network
+0.0.0.0 redlib.ducks.party
+0.0.0.0 red.ngn.tf
+0.0.0.0 red.artemislena.eu
+0.0.0.0 r.darrennathanael.com
+0.0.0.0 redlib.privacyredirect.com
+0.0.0.0 redlib.seasi.dev
+0.0.0.0 redlib.incogniweb.net
+0.0.0.0 reddit.nerdvpn.de
+0.0.0.0 lr.ggtyler.dev
+0.0.0.0 redlib.baczek.me
+0.0.0.0 redlib.nadeko.net
+0.0.0.0 redlib.nirn.quest
+0.0.0.0 redlib.private.coffee
+0.0.0.0 redlib.frontendfriendly.xyz
+0.0.0.0 rl.rootdo.com
+0.0.0.0 red.arancia.click
+0.0.0.0 redlib.reallyaweso.me
+0.0.0.0 redlib.privacy.com.de
