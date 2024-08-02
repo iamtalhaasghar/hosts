@@ -61,9 +61,11 @@ def fetch_invidious_instances():
                 print(f'found new invidious instance {u} from {host}')
                 rdb.sadd(k, u)
 
-
-fetch_invidious_instances()
-fetch_reddit_instances()
+try:
+    fetch_invidious_instances()
+    fetch_reddit_instances()
+except Exception as e:
+    print(e)
 
 count = 0 
 with io.StringIO() as s:
