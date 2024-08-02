@@ -2,10 +2,11 @@
 # Talha Asghar <talhaasghar220@gmail.com>
 # 02-aug-2024
 
-import io
+import re,io
 from redis import Redis
 from datetime import datetime
 import requests
+from bs4 import BeautifulSoup
 
 rdb = Redis(decode_responses=True)
 
@@ -45,20 +46,24 @@ def fetch_reddit_instances():
 
     
 def fetch_invidious_instances():
-    # what about these two?
-    # invidious instance list https://raw.githubusercontent.com/iv-org/documentation/master/docs/instances.md
-    # https://uptime.invidious.io/
+    
+    parser1 = lambda host: [i[0] for i in requests.get(host).json()]
+    parser2 = lambda host: [i.text for i in BeautifulSoup(requests.get(host).text, 'lxml').find_all('span', class_='alias')]
+    parser3 = lambda host: [re.search(r'\[(.*?)\]', i).group(1) for i in requests.get(host).text.split('\n') if i.startswith('*') and 'https' in i]
 
-    host = 'https://api.invidious.io/instances.json'
-    urls = [i[0] for i in requests.get(host).json()]
+    hosts = {'https://api.invidious.io/instances.json': parser1, 'https://uptime.invidious.io' : parser2, 'https://raw.githubusercontent.com/iv-org/documentation/master/docs/instances.md': parser3}
     k = '/blacklist/host/invidious'
-    for u in urls:
-        if not rdb.sismember(k, u):
-            print(f'found new invidious instance {u} from {host}')
-            rdb.sadd(k, u)
+    for host, parser in hosts.items():
+        urls = parser(host)
+        #print(host, urls);continue
+        for u in urls:        
+            if not rdb.sismember(k, u):
+                print(f'found new invidious instance {u} from {host}')
+                rdb.sadd(k, u)
 
-fetch_reddit_instances()
+
 fetch_invidious_instances()
+fetch_reddit_instances()
 
 count = 0 
 with io.StringIO() as s:
