@@ -1,3 +1,4 @@
+#!/mnt/data/projects/hosts/.venv/bin/python
 # a script to generate hosts from redlib, libreddit & invidious instance pages
 # Talha Asghar <talhaasghar220@gmail.com>
 # 02-aug-2024
@@ -79,5 +80,5 @@ with io.StringIO() as s:
                 continue
             s.write(f'0.0.0.0 {m}\n')
 
-    with open('hosts.txt', 'w') as f:
+    with open('/mnt/data/projects/hosts/hosts.txt', 'w') as f:
         f.write(s.getvalue().replace('$total_hosts', str(count)))
