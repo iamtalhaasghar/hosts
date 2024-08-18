@@ -4,10 +4,12 @@
 # 02-aug-2024
 
 import re,io
+import sys, time
 from redis import Redis
 from datetime import datetime
-import requests
+import os, requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
 rdb = Redis(decode_responses=True)
 
@@ -62,7 +64,46 @@ def fetch_invidious_instances():
                 print(f'found new invidious instance {u} from {host}')
                 rdb.sadd(k, u)
 
+
+def block_fna_whatsapp_domains():
+    '''
+    Block domains like media.fkhi2-3.fna.whatsapp.net responsible for delivering media content for whatsapp channels
+    '''
+
+    if not load_dotenv():
+        print("ERR: Couldn't load .env file!")
+        exit()
+
+    rdb = Redis(decode_responses=True)
+
+    ntfy_url = os.getenv('NTFY_URL')
+    # Fetch latest log entry from NextDNS analytics
+    nextdns_api_key = os.getenv("NEXT_DNS_API_KEY")
+
+    next_dns_profiles =[os.getenv("NEXT_DNS_PROFILE_PC"), os.getenv("NEXT_DNS_PROFILE_LAPTOP"), os.getenv("NEXT_DNS_PROFILE_MOBILE")]
+
+    for next_dns_profile in next_dns_profiles:
+        analytics_url = f"https://api.nextdns.io/profiles/{next_dns_profile}/logs"
+        headers = {"X-Api-Key": nextdns_api_key}
+        params = {"limit":1000, "sort": "desc", "status":"default", "search": "fna.whatsapp.net"}
+        response = requests.get(analytics_url, headers=headers, params=params)
+        data = response.json()
+        domains = list()
+        for row in data['data']:
+            domains.append(row['domain'])
+
+
+        domains = set(domains)
+        for d in domains:
+            if d.startswith('media'):
+                rdb.sadd('/blacklist/host/socialmedia', d)
+            else:
+                # sonar.fkhi2-2.fna.whatsapp.net todo: what is this domain for?
+                pass
+
+
 try:
+    block_fna_whatsapp_domains()
     fetch_invidious_instances()
     fetch_reddit_instances()
 except Exception as e:
@@ -82,3 +123,6 @@ with io.StringIO() as s:
 
     with open('/mnt/data/projects/hosts/hosts.txt', 'w') as f:
         f.write(s.getvalue().replace('$total_hosts', str(count)))
+
+
+
