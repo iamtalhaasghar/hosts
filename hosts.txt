@@ -180,7 +180,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 media.flhe9-1.fna.whatsapp.net
 0.0.0.0 media.fryk2-1.fna.whatsapp.net
 0.0.0.0 media.fryk3-1.fna.whatsapp.net
-0.0.0.0 mmg.whatsapp.net
 0.0.0.0 netflix.com
 0.0.0.0 pinterest.com
 0.0.0.0 pps.whatsapp.net
