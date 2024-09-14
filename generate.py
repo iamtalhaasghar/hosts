@@ -103,7 +103,7 @@ def block_fna_whatsapp_domains():
 
 
 try:
-    block_fna_whatsapp_domains()
+    #block_fna_whatsapp_domains()
     fetch_invidious_instances()
     fetch_reddit_instances()
 except Exception as e:
