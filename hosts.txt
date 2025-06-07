@@ -29,7 +29,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 external-content.duckduckgo.com
 0.0.0.0 fbcdn.net
 0.0.0.0 google.com
-0.0.0.0 i.ytimg.com
+#0.0.0.0 i.ytimg.com
 0.0.0.0 kwai-pro.com
 0.0.0.0 kwai.net
 0.0.0.0 like.video
@@ -40,7 +40,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 startpage.com
 0.0.0.0 yahoo.com
 0.0.0.0 yandex.ru
-0.0.0.0 yt3.ggpht.com
+#0.0.0.0 yt3.ggpht.com
 
 # /blacklist/host/adult - 7 entries
 
